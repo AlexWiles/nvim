@@ -39,4 +39,11 @@ require("lazy").setup({
     -- for managing language services in neovim
     { 'williamboman/mason.nvim' },
     { 'williamboman/mason-lspconfig.nvim' },
+
+    -- rust
+    {
+        'mrcjkb/rustaceanvim',
+        version = '^3', -- Recommended
+        ft = { 'rust' },
+    }
 })
