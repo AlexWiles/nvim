@@ -18,6 +18,9 @@ lsp_zero.on_attach(function(_, bufnr)
     -- (l)sp --> (f)ind --> (d)efinitions
     vim.keymap.set('n', '<leader>lfd', telescope.lsp_definitions)
 
+    -- (l)sp --> (f)ind --> (i)mplementations
+    vim.keymap.set('n', '<leader>lfi', telescope.lsp_implementations)
+
     -- (l)sp --> (d)iagnostics --> (p)roject
     vim.keymap.set('n', '<leader>ldp', telescope.diagnostics)
 

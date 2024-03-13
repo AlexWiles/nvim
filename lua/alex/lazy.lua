@@ -49,5 +49,10 @@ require("lazy").setup({
         'mrcjkb/rustaceanvim',
         version = '^3', -- Recommended
         ft = { 'rust' },
+    },
+    {
+        "folke/trouble.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons" },
+        opts = {}
     }
 })
