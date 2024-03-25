@@ -9,8 +9,11 @@ lsp_zero.on_attach(function(_, bufnr)
 
 
     local telescope = require('telescope.builtin')
-    -- (l)sp --> (r)ename
-    vim.keymap.set('n', '<leader>lr', vim.lsp.buf.rename)
+    -- (l)sp --> (a)ction --> (r)ename
+    vim.keymap.set('n', '<leader>lar', vim.lsp.buf.rename)
+
+    -- (l)sp --> (a)ction --> (c)ode action
+    vim.keymap.set('n', '<leader>lac', vim.lsp.buf.code_action)
 
     -- (l)sp --> (f)ind --> (r)eferences
     vim.keymap.set('n', '<leader>lfr', telescope.lsp_references)

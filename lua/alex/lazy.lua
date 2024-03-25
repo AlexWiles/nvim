@@ -23,10 +23,21 @@ require("lazy").setup({
         "nvim-telescope/telescope-file-browser.nvim",
         dependencies = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
     },
+
+    -- color schemes
     {
         'rose-pine/neovim',
         name = 'rose-pine'
     },
+    {
+        "catppuccin/nvim",
+        name = "catppuccin",
+    },
+    {
+        "f-person/auto-dark-mode.nvim",
+        name = "auto-dark-mode",
+    },
+
     {
         'nvim-treesitter/nvim-treesitter',
         cmd = 'TSUpdate'
@@ -40,7 +51,8 @@ require("lazy").setup({
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
     { 'L3MON4D3/LuaSnip' },
-    -- for managing language services in neovim
+
+    -- for managing language servers in neovim
     { 'williamboman/mason.nvim' },
     { 'williamboman/mason-lspconfig.nvim' },
 
