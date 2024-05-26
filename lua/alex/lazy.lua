@@ -44,7 +44,6 @@ require("lazy").setup({
     },
 
     { 'github/copilot.vim' },
-
     -- https://github.com/VonHeikemen/lsp-zero.nvim
     { 'VonHeikemen/lsp-zero.nvim',        branch = 'v3.x' },
     { 'neovim/nvim-lspconfig' },
@@ -66,5 +65,8 @@ require("lazy").setup({
         "folke/trouble.nvim",
         dependencies = { "nvim-tree/nvim-web-devicons" },
         opts = {}
+    },
+    {
+        "aserowy/tmux.nvim"
     }
 })

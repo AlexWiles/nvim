@@ -2,7 +2,7 @@ require('rose-pine').setup({
     variant = "moon",
 
     styles = {
-        transparency = true,
+        transparency = false,
     },
 })
 
